@@ -16,7 +16,6 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSString *pathName = [[NSBundle mainBundle] pathForResource:@"productsList" ofType:@"xml"];
@@ -24,6 +23,14 @@
     NSXMLParser *xmlParser = [[NSXMLParser alloc]initWithContentsOfURL:url];
     Parser *theParser = [[Parser alloc]initParser];
     [xmlParser setDelegate:theParser];
+    
+    BOOL worked;
+    if (worked) {
+        NSLog(@"Yay");
+    } else {
+        NSLog(@"Noo");
+    }
+    
     return YES;
 }
 

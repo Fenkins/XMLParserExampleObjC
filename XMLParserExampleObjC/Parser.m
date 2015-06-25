@@ -9,5 +9,10 @@
 #import "Parser.h"
 
 @implementation Parser
-
+- (id) initParser {
+    if (self == [super init]) {
+        app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    }
+    return self;
+}
 @end
