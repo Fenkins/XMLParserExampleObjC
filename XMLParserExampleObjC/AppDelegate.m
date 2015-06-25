@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Parser.h"
 #import "DetailViewController.h"
 
 @interface AppDelegate ()
@@ -18,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *pathName = [[NSBundle mainBundle] pathForResource:@"productsList" ofType:@"xml"];
+    NSURL *url = [NSURL fileURLWithPath:pathName];
+    NSXMLParser *xmlParser = [[NSXMLParser alloc]initWithContentsOfURL:url];
+    Parser *theParser = [[Parser alloc]initParser];
+    [xmlParser setDelegate:theParser];
     return YES;
 }
 
