@@ -17,6 +17,7 @@
 }
 
 - (void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
+    // Fill those names carefully. If you made a mistake, it will cause an exception
     if ([elementName isEqualToString:@"Products"]) {
         app.listArray = [[NSMutableArray alloc] init];
     } else if ([elementName isEqualToString:@"Product"]) {
@@ -34,9 +35,10 @@
 }
 
 - (void) parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
-    if ([elementName isEqualToString:@"Prices"]) {
+    // Fill those names carefully. If you made a mistake, it will cause an exception
+    if ([elementName isEqualToString:@"Products"]) {
         return;
-    } else if ([elementName isEqualToString:@"Price"]) {
+    } else if ([elementName isEqualToString:@"Product"]) {
         [app.listArray addObject:thelist];
         thelist = nil;
     }
