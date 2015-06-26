@@ -15,7 +15,9 @@
 @end
 
 @implementation AppDelegate
-
+@synthesize listArray;
+@synthesize window = _window;
+@synthesize navigationController = _navigationController;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSString *pathName = [[NSBundle mainBundle] pathForResource:@"productsList" ofType:@"xml"];
@@ -24,9 +26,9 @@
     Parser *theParser = [[Parser alloc]initParser];
     [xmlParser setDelegate:theParser];
     
-    BOOL worked;
+    BOOL worked = [xmlParser parse];
     if (worked) {
-        NSLog(@"Yay");
+        NSLog(@"Amount %i", [listArray count]);
     } else {
         NSLog(@"Noo");
     }
