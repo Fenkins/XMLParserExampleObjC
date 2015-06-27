@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "Parser.h"
 #import "DetailViewController.h"
 
 @interface AppDelegate ()
@@ -15,24 +14,10 @@
 @end
 
 @implementation AppDelegate
-@synthesize listArray;
-@synthesize window = _window;
-@synthesize navigationController = _navigationController;
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSString *pathName = [[NSBundle mainBundle] pathForResource:@"productsList" ofType:@"xml"];
-    NSURL *url = [NSURL fileURLWithPath:pathName];
-    NSXMLParser *xmlParser = [[NSXMLParser alloc]initWithContentsOfURL:url];
-    Parser *theParser = [[Parser alloc]initParser];
-    [xmlParser setDelegate:theParser];
-    
-    BOOL worked = [xmlParser parse];
-    if (worked) {
-        NSLog(@"Amount %i", [listArray count]);
-    } else {
-        NSLog(@"Noo");
-    }
-    
     return YES;
 }
 

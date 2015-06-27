@@ -15,8 +15,6 @@
 @end
 
 @implementation MasterViewController
-@synthesize app;
-@synthesize theList;
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -25,10 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    app = [[UIApplication sharedApplication]delegate];
-    [self.tableView reloadData];
-    
-    
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
@@ -66,17 +60,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [app.listArray count];
+    return self.objects.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    theList = [app.listArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = theList.name;
-    NSLog(@"%@", theList.name);
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    
+    NSDate *object = self.objects[indexPath.row];
+    cell.textLabel.text = [object description];
     return cell;
 }
 
