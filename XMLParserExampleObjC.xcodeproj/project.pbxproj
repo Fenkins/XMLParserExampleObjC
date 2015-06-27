@@ -17,7 +17,6 @@
 		AA3F0FCC1B3B4039005BD865 /* XMLParserExampleObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3F0FCB1B3B4039005BD865 /* XMLParserExampleObjCTests.m */; };
 		AA3F0FD61B3B40B5005BD865 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA3F0FD51B3B40B5005BD865 /* Entitlements.plist */; };
 		AA3F0FD81B3B45C8005BD865 /* productsList.xml in Resources */ = {isa = PBXBuildFile; fileRef = AA3F0FD71B3B45C8005BD865 /* productsList.xml */; };
-		AA3F0FDC1B3B4701005BD865 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3F0FDB1B3B4701005BD865 /* List.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +47,6 @@
 		AA3F0FCB1B3B4039005BD865 /* XMLParserExampleObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLParserExampleObjCTests.m; sourceTree = "<group>"; };
 		AA3F0FD51B3B40B5005BD865 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Entitlements.plist; path = ../Entitlements.plist; sourceTree = "<group>"; };
 		AA3F0FD71B3B45C8005BD865 /* productsList.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = productsList.xml; path = ../productsList.xml; sourceTree = "<group>"; };
-		AA3F0FDA1B3B4701005BD865 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
-		AA3F0FDB1B3B4701005BD865 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +94,6 @@
 				AA3F0FB41B3B4039005BD865 /* MasterViewController.m */,
 				AA3F0FB61B3B4039005BD865 /* DetailViewController.h */,
 				AA3F0FB71B3B4039005BD865 /* DetailViewController.m */,
-				AA3F0FDA1B3B4701005BD865 /* List.h */,
-				AA3F0FDB1B3B4701005BD865 /* List.m */,
 				AA3F0FB91B3B4039005BD865 /* Main.storyboard */,
 				AA3F0FBC1B3B4039005BD865 /* Images.xcassets */,
 				AA3F0FBE1B3B4039005BD865 /* LaunchScreen.xib */,
@@ -245,7 +240,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA3F0FDC1B3B4701005BD865 /* List.m in Sources */,
 				AA3F0FB21B3B4039005BD865 /* AppDelegate.m in Sources */,
 				AA3F0FB51B3B4039005BD865 /* MasterViewController.m in Sources */,
 				AA3F0FAF1B3B4039005BD865 /* main.m in Sources */,
@@ -448,6 +442,7 @@
 				AA3F0FD11B3B4039005BD865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA3F0FD21B3B4039005BD865 /* Build configuration list for PBXNativeTarget "XMLParserExampleObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +451,7 @@
 				AA3F0FD41B3B4039005BD865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
