@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "AppDelegate.h"
+#import "List.h"
 @interface MasterViewController : UITableViewController
 
+@property (nonatomic, retain) AppDelegate *app;
+@property (nonatomic, retain) List *theList;
 
 @end
 
