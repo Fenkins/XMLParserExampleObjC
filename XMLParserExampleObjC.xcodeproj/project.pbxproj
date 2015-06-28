@@ -18,6 +18,7 @@
 		AA3F0FD61B3B40B5005BD865 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA3F0FD51B3B40B5005BD865 /* Entitlements.plist */; };
 		AA3F0FD81B3B45C8005BD865 /* productsList.xml in Resources */ = {isa = PBXBuildFile; fileRef = AA3F0FD71B3B45C8005BD865 /* productsList.xml */; };
 		AAEAF2181B407664006E36C2 /* Products.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEAF2171B407664006E36C2 /* Products.m */; };
+		AAEAF21B1B40903E006E36C2 /* ProductsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEAF21A1B40903E006E36C2 /* ProductsParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		AA3F0FD71B3B45C8005BD865 /* productsList.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = productsList.xml; path = ../productsList.xml; sourceTree = "<group>"; };
 		AAEAF2161B407664006E36C2 /* Products.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Products.h; sourceTree = "<group>"; };
 		AAEAF2171B407664006E36C2 /* Products.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Products.m; sourceTree = "<group>"; };
+		AAEAF2191B40903E006E36C2 /* ProductsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsParser.h; sourceTree = "<group>"; };
+		AAEAF21A1B40903E006E36C2 /* ProductsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				AA3F0FAC1B3B4039005BD865 /* Supporting Files */,
 				AAEAF2161B407664006E36C2 /* Products.h */,
 				AAEAF2171B407664006E36C2 /* Products.m */,
+				AAEAF2191B40903E006E36C2 /* ProductsParser.h */,
+				AAEAF21A1B40903E006E36C2 /* ProductsParser.m */,
 			);
 			path = XMLParserExampleObjC;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				AA3F0FB21B3B4039005BD865 /* AppDelegate.m in Sources */,
 				AA3F0FB51B3B4039005BD865 /* MasterViewController.m in Sources */,
 				AA3F0FAF1B3B4039005BD865 /* main.m in Sources */,
+				AAEAF21B1B40903E006E36C2 /* ProductsParser.m in Sources */,
 				AA3F0FB81B3B4039005BD865 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
