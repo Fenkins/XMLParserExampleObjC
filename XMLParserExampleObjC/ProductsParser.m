@@ -37,6 +37,8 @@
 
     // Dont forget to add <NSXMLParserDelegate> protocol in the .h file to get rid of the warning
     self.parser.delegate = self;
+    // Parser is go
+    [self.parser parse];
 }
 
 - (void)parser:(NSXMLParser *)parser
@@ -56,6 +58,20 @@ foundCharacters:(NSString *)string {
     if ([self.element isEqualToString:@"Description"]) {
         self.currentProductDescription = string;
     }
+}
+
+- (void)parser:(NSXMLParser *)parser
+ didEndElement:(NSString *)elementName
+  namespaceURI:(NSString *)namespaceURI
+ qualifiedName:(NSString *)qName {
+    // This will add found elements to the array and reset the element when we see the next "Product"
+    if ([elementName isEqualToString:@"Product"]) {
+        Products *thisProduct = [[Products alloc]initWithName:self.currentProductName
+            description:self.currentProductDescription];
+        [self.productsArray addObject:thisProduct];
+    }
+    // resetting the element so it is ready to take up a new one
+    self.element = nil;
 }
 
 @end

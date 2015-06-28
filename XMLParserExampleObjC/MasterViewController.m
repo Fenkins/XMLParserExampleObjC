@@ -9,6 +9,9 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 
+#import "Products.h"
+#import "ProductsParser.h"
+
 @interface MasterViewController ()
 
 @property NSMutableArray *objects;
