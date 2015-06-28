@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Products>
+<Products_list>
 	<Product id="0">
 		<Name>Box of chocolate</Name>
 		<Description>Box full of chocolate, very tasty</Description>
@@ -24,4 +24,4 @@
 		<Name>Box of car accessories</Name>
 		<Description>Various accessories for any car availible on the market</Description>
 	</Product>
-</Products>
+</Products_list>

@@ -17,6 +17,7 @@
 		AA3F0FCC1B3B4039005BD865 /* XMLParserExampleObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3F0FCB1B3B4039005BD865 /* XMLParserExampleObjCTests.m */; };
 		AA3F0FD61B3B40B5005BD865 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA3F0FD51B3B40B5005BD865 /* Entitlements.plist */; };
 		AA3F0FD81B3B45C8005BD865 /* productsList.xml in Resources */ = {isa = PBXBuildFile; fileRef = AA3F0FD71B3B45C8005BD865 /* productsList.xml */; };
+		AAEAF2181B407664006E36C2 /* Products.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEAF2171B407664006E36C2 /* Products.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		AA3F0FCB1B3B4039005BD865 /* XMLParserExampleObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLParserExampleObjCTests.m; sourceTree = "<group>"; };
 		AA3F0FD51B3B40B5005BD865 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Entitlements.plist; path = ../Entitlements.plist; sourceTree = "<group>"; };
 		AA3F0FD71B3B45C8005BD865 /* productsList.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = productsList.xml; path = ../productsList.xml; sourceTree = "<group>"; };
+		AAEAF2161B407664006E36C2 /* Products.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Products.h; sourceTree = "<group>"; };
+		AAEAF2171B407664006E36C2 /* Products.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Products.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				AA3F0FBE1B3B4039005BD865 /* LaunchScreen.xib */,
 				AA3F0FD91B3B45EB005BD865 /* toParse */,
 				AA3F0FAC1B3B4039005BD865 /* Supporting Files */,
+				AAEAF2161B407664006E36C2 /* Products.h */,
+				AAEAF2171B407664006E36C2 /* Products.m */,
 			);
 			path = XMLParserExampleObjC;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAEAF2181B407664006E36C2 /* Products.m in Sources */,
 				AA3F0FB21B3B4039005BD865 /* AppDelegate.m in Sources */,
 				AA3F0FB51B3B4039005BD865 /* MasterViewController.m in Sources */,
 				AA3F0FAF1B3B4039005BD865 /* main.m in Sources */,
