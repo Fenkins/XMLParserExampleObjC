@@ -70,7 +70,11 @@ foundCharacters:(NSString *)string {
     if ([elementName isEqualToString:@"Product"]) {
         Products *thisProduct = [[Products alloc]initWithName:self.currentProductName
             description:self.currentProductDescription];
+        if (thisProduct == nil) {
+            NSLog(@"всё очень плохо, шэф");
+        }
             [self.productsArray addObject:thisProduct];
+
         if (self.productsArray == nil) {
             NSLog(@"всё пропало, шэф");
         }

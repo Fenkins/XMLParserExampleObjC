@@ -31,6 +31,8 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     
+    self.productArray = [[NSMutableArray alloc] init];
+    
     ProductsParser *menuParser = [[ProductsParser alloc] initWithArray:self.productArray];
     [menuParser parseXMLFile];
     //NSLog(@"Count %lu", self.productArray.count);
