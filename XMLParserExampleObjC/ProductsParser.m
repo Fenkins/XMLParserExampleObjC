@@ -54,9 +54,11 @@ foundCharacters:(NSString *)string {
     if ([self.element isEqualToString:@"Name"]) {
         // string is a returned string that is just being analized
         self.currentProductName = string;
+        //NSLog(@"String: %@", string);
     }
     if ([self.element isEqualToString:@"Description"]) {
         self.currentProductDescription = string;
+        //NSLog(@"String: %@", string);
     }
 }
 
