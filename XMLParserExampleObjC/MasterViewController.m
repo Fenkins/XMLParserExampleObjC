@@ -31,6 +31,7 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     
+    // You have to initialize the array before passing to ProductParser, otherwise you are gonna have a bad time
     self.productArray = [[NSMutableArray alloc] init];
     
     ProductsParser *menuParser = [[ProductsParser alloc] initWithArray:self.productArray];

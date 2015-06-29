@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DA43FD3F-F9DF-4DCB-A8C8-652E0A014AAB</string>
 	<key>IDESourceControlProjectName</key>
-	<string>XMLParserExampleObjC</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7EDFA634F8DB00FF83485263CCC9C2EBF9A8A143</key>
 		<string>https://github.com/Fenkins/XMLParserExampleObjC.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>XMLParserExampleObjC.xcodeproj</string>
+	<string>XMLParserExampleObjC.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7EDFA634F8DB00FF83485263CCC9C2EBF9A8A143</key>
