@@ -13,7 +13,7 @@
 @property NSString *productName;
 @property NSString *productDescription;
 
--(id) initWithName: (NSString *)Name
-       description: (NSString *)Description;
+-(id) initWithName: (NSString *)name
+       description: (NSString *)description;
 
 @end

@@ -11,13 +11,17 @@
 @implementation Products
 
 
--(id) initWithName: (NSString *)Name
-       description: (NSString *)Description{
+-(id) initWithName: (NSString *)name
+       description: (NSString *)description{
     self = [super init];
     if (self) {
         // Getting the info, passed to the init method into the class propertyes
-        self.productName = Name;
-        self.productDescription = Description;
+        self.productName = name;
+        self.productDescription = description;
+
+        
+        //>>>This crap up there working just fine<<<
+
     }
     return self;
 }

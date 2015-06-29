@@ -33,7 +33,7 @@
     
     ProductsParser *menuParser = [[ProductsParser alloc] initWithArray:self.productArray];
     [menuParser parseXMLFile];
-    NSLog(@"Count %lu", self.productArray.count);
+    //NSLog(@"Count %lu", self.productArray.count);
 }
 
 - (void)didReceiveMemoryWarning {

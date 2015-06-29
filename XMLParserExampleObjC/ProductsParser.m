@@ -70,10 +70,16 @@ foundCharacters:(NSString *)string {
     if ([elementName isEqualToString:@"Product"]) {
         Products *thisProduct = [[Products alloc]initWithName:self.currentProductName
             description:self.currentProductDescription];
-        [self.productsArray addObject:thisProduct];
+            [self.productsArray addObject:thisProduct];
+        if (self.productsArray == nil) {
+            NSLog(@"всё пропало, шэф");
+        }
+        NSLog(@"ThisProduct %@", thisProduct.productName);
     }
     // resetting the element so it is ready to take up a new one
     self.element = nil;
+    NSLog(@"Array count %lu",self.productsArray.count);
+    //NSLog(@"elementName %@", elementName);
 }
 
 @end
