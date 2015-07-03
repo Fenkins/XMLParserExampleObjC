@@ -10,7 +10,7 @@
 #import "Products.h"
 
 
-// This will create private properties, this called interface extension
+// This will create private properties, this is called interface extension
 @interface ProductsParser()
 
 @property NSXMLParser *parser;
