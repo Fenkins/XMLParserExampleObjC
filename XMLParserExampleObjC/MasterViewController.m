@@ -82,6 +82,7 @@
     cell.textLabel.text = [product productName];
     NSLog(@"Product name: %@",[product productName]);
     cell.detailTextLabel.text = [product productDescription];
+    NSLog(@"Product description: %@",[product productDescription]);
     return cell;
 }
 
