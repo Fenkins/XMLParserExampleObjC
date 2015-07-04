@@ -12,12 +12,14 @@
 
 
 -(id) initWithName: (NSString *)name
-       description: (NSString *)description{
+       description: (NSString *)description
+             image: (NSString *)image{
     self = [super init];
     if (self) {
         // Getting the info, passed to the init method into the class propertyes
         self.productName = name;
         self.productDescription = description;
+        self.productImage = image;
 
         
         //>>>This crap up there working just fine<<<

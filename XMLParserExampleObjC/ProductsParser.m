@@ -18,6 +18,7 @@
 // Product properties below, temporaty stuff
 @property NSString *currentProductName;
 @property NSString *currentProductDescription;
+@property NSString *currentProductImage;
 
 @end
 
@@ -60,6 +61,9 @@ foundCharacters:(NSString *)string {
         self.currentProductDescription = string;
         //NSLog(@"String: %@", string);
     }
+    if ([self.element isEqualToString:@"Image"]) {
+        self.currentProductImage = string;
+    }
 }
 
 - (void)parser:(NSXMLParser *)parser
@@ -68,8 +72,7 @@ foundCharacters:(NSString *)string {
  qualifiedName:(NSString *)qName {
     // This will add found elements to the array and reset the element when we see the next "Product"
     if ([elementName isEqualToString:@"Product"]) {
-        Products *thisProduct = [[Products alloc]initWithName:self.currentProductName
-            description:self.currentProductDescription];
+        Products *thisProduct = [[Products alloc]initWithName:self.currentProductName description:self.currentProductDescription image:self.currentProductImage];
         if (thisProduct == nil) {
             NSLog(@"всё очень плохо, шэф");
         }

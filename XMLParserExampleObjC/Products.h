@@ -14,8 +14,10 @@
 
 @property NSString *productName;
 @property NSString *productDescription;
+@property NSString *productImage;
 
 -(id) initWithName: (NSString *)name
-       description: (NSString *)description;
+       description: (NSString *)description
+             image: (NSString *)image;
 
 @end
